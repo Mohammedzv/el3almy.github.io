@@ -2,62 +2,37 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>موقع العالمي</title>
+  <title>الصفحة الرئيسية - وصلي</title>
   <style>
     body {
-      margin: 0;
-      background-color: #000;
-      color: #00ff00;
-      font-family: 'Cairo', sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .container {
+      background-color: black;
+      color: green;
       text-align: center;
+      font-family: 'Arial', sans-serif;
+      margin-top: 50px;
     }
-
-    .container img {
-      width: 250px;
-      margin-bottom: 20px;
-    }
-
-    .title {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
     .btn {
-      background-color: transparent;
-      border: 2px solid #00ff00;
-      color: #00ff00;
-      padding: 10px 20px;
-      font-size: 18px;
+      background-color: green;
+      color: black;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
       border-radius: 10px;
       cursor: pointer;
-      transition: 0.3s ease;
+      margin-top: 30px;
     }
-
     .btn:hover {
-      background-color: #00ff00;
-      color: #000;
+      background-color: lime;
     }
   </style>
 </head>
 <body>
-
+  <h1>مرحبا بك في موقع العالمي</h1>
+  <img src="images.gif" alt="صورة ترحيبية" width="300"><br>
+  <button class="btn" onclick="window.location.href='offices.html'">عرض المكاتب</button>
   <audio autoplay>
     <source src="welcome.mp3" type="audio/mpeg">
-    متصفحك لا يدعم تشغيل الصوت.
+    المتصفح لا يدعم تشغيل الصوت.
   </audio>
-
-  <div class="container">
-    <img src="images.gif" alt="صورة متحركة ترحيبية">
-    <div class="title">أهلاً وسهلاً بيك في موقع العالمي</div>
-    <button class="btn">ابدأ التصفح</button>
-  </div>
-
 </body>
 </html>
